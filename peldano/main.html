@@ -1,0 +1,68 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+   
+    <link rel="stylesheet" type="text/css" href="body.css">
+</head>
+<body>
+  
+
+<nav class="navbar">
+  <div id="trapezoid">
+    <a class="sub-home" href="#">Home</a>
+    <a href="" class="expandHome">Home</a>
+    <a href="" class="expandHome">Peldano Mart</a>
+
+
+    
+  <div class="subnav">
+     <button class="subnavbtn">Peldano food<i class="fa fa-caret-down"></i></button>
+     <div class="subnav-content">
+      <button class="subnavbtn">Log in<i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content"></div>
+        <div id="subnav-trapezoid">
+          
+        </div>
+       </div>
+    </div>
+  
+     <div class="subnav">
+     
+       <div class="subnav-content">
+        <div class="subnav-trapezoid">
+          <button class="subnavbtn">Join us<i class="fa fa-caret-down"></i></button></a>
+         </div>
+       </div>
+      </div>
+    <a href="form.html" class="expandHome">Join us</a>
+    <a href="login.html" class="expandHome">Log in</a>
+  </div>
+</nav>
+<script>
+    $('.expandHome').mouseover(function() {
+  $('.sub-home').css({
+        'display': 'block'
+    }); 
+});
+$('.subnavbtn').mouseover(function() {
+  $('.sub-home').css({
+        'display': 'none'
+    }); 
+});
+
+$('#trapezoid').mouseleave(function() {
+  $('#trapezoid').css({
+        'margin-top': '-53px'
+    }); 
+    $('.sub-home').css({
+        'display': 'none'
+    }); 
+}).mouseenter(function() {
+  $('#trapezoid').css({
+        'margin-top': '0px'
+    }); 
+});
+              
+</script>
+</body>
+</html>

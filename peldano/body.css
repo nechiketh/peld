@@ -1,0 +1,19 @@
+body {
+    
+    
+  overflow: visible !important;
+  background: -webkit-linear-gradient(45deg, #085078 10%, #21F2BBFE 90%);
+  background: -moz-linear-gradient(45deg, #085078 10%, #21F2BBFE 90%);
+  background: -ms-linear-gradient(45deg,  #21F2BBFE 10%, #21F2BBFE 90%);
+  background: -o-linear-gradient(45deg, #085078 10%, #21F2BBFE 90%);
+  background: linear-gradient(45deg, #085078 10%, #21F2BBFE 90%);
+ 
+    background-image:url("COMING SOON.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+   
+}
+  
+
+ 
+

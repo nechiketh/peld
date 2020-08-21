@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="agree.css">
+    
+    </head>
+    <script>
+        function testC()
+        {
+           pwin=window.open("popup.htm" ... etc);
+           x=confirm('press okay to accept the terms and conditions');
+           if(!x)
+           {
+              pwin.close();
+              window.location("login.html");
+           }
+        }
+     </script>
+    
+    <body onload="disableSubmit()">
+        <form method="post">
+            <div id="terms-pane">
+
+            <h1 style="text-align:center">Terms & Conditions</h1>
+          <p> <bold> 1. This is an open agreement between PELDANO and the Restaurant mentioned above and can be terminated by consent of both parties with a prior notice period of minimum 7 days.</bold></p>
+          <p> <bold>2. During the period of agreement PELDANO will receive orders in online platforms on behalf of Restaurant and will deliver to third parties with a service charge of …………% on each Bill amount/order from restaurant.</bold></p>
+            <p> <bold>3. A Period of …… weeks from …………… to ………….. Will be given as trial run for the Restaurant.</bold></p>
+                <p> <bold>4. PELDANO will not deduct any kind of Service charges during the trial run period mentioned in clause-3.</bold></p>
+                    <p> <bold>5. PELDANO will have the right to use logo, pictures of the above restaurant in online. Platforms for advertising and promotions of the product to create business.</bold></p>
+                        <p> <bold>6. PELDANO will be responsible for any damage to product once picked up from Restaurant.</bold></p>
+                            <p> <bold>7. The merchant shall be responsible for managing and updating of catalogue and pricing of the product showcased on the PELDANO Mobile Application. PELDANO will share the Merchant module with the Merchant.</bold></p>
+                                <p> <bold>8. In case the Merchant module not being provided to the merchant, the company shall be responsible for catalogue updates at its own cost.</bold></p>
+                                    <p> <bold> 9. Failure in quality of product will be concern of the Restaurant itself.</bold></p>
+                                    
+                                        <p> <bold>10. PELDANO will not take any responsibility in cancellation of orders due to failure in service from the Restaurant</bold></p>
+                                            <p> <bold>11. Purchases will be made on credit basis from Restaurant and will be settled on daily basis.</bold></p>
+        (For reference, Orders on Monday From 9:00 am to 7:00pm will be settled before 9:00pm and likewise) through bank or by cash.</bold></p>
+        <p> <bold>12. PELDANO will transfer the collected amount after deducting the service charges mentioned in clause-2.</bold></p>
+            <p> <bold>13. By signing this agreement you have accepted and read all terms and conditions mentioned above.</bold></p>
+        FOR PELDANO</div>
+
+     <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions
+    <br><br>
+      <input type="submit" name="submit" id="submit">
+      <script>
+        function disableSubmit() {
+         document.getElementById("submit").disabled = true;
+        }
+       
+         function activateButton(element) {
+       
+             if(element.checked) {
+               document.getElementById("submit").disabled = false;
+              }
+              else  {
+               document.getElementById("submit").disabled = true;
+             }
+       
+         }
+       </script>
+    </body>
+    </html>
+
+
+
+
+
